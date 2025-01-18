@@ -1,0 +1,14 @@
+.gradient-text {
+    background: linear-gradient(135deg, #4F46E5, #818CF8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-bg {
+    background: linear-gradient(135deg, #4F46E5, #818CF8);
+}
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+    transform: scale(1.05);
+}
