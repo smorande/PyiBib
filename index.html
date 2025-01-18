@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyBib - AI-Powered Citation Manager</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #4F46E5, #818CF8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4F46E5, #818CF8);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <nav class="fixed w-full bg-white bg-opacity-90 backdrop-blur-lg shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold gradient-text">PyBib</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#features" class="text-gray-600 hover:text-indigo-600">Features</a>
+                    <a href="#demo" class="text-gray-600 hover:text-indigo-600">Demo</a>
+                    <a href="https://pyibib-111.streamlit.app" class="gradient-bg hover:opacity-90 text-white px-6 py-2 rounded-full text-sm font-medium transform transition hover:scale-105">
+                        Launch App →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="relative min-h-screen flex items-center bg-white overflow-hidden pt-16">
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 to-white"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center" data-aos="fade-up">
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight">
+                        <span class="block text-gray-900">Transform Your</span>
+                        <span class="gradient-text">Academic Citations</span>
+                        <span class="block text-gray-900">with AI</span>
+                    </h1>
+                    <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+                        Modernize your research workflow with AI-powered citation management. 
+                        Update references automatically and ensure your work stays current.
+                    </p>
+                    <div class="mt-10 flex justify-center gap-4">
+                        <a href="https://pyibib-111.streamlit.app" class="gradient-bg text-white px-8 py-4 rounded-full text-lg font-medium hover-scale inline-flex items-center">
+                            Get Started Free <span class="ml-2">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div id="features" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <h2 class="text-4xl font-extrabold gradient-text">Powerful Features</h2>
+                    <p class="mt-4 text-xl text-gray-600">Everything you need to manage citations efficiently</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-gray-50 rounded-2xl p-8 hover-scale" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">AI-Powered Updates</h3>
+                        <p class="text-gray-600">Smart citation detection and automatic updates to recent, relevant publications using advanced AI technology.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-8 hover-scale" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Multiple Formats</h3>
+                        <p class="text-gray-600">Seamless support for PDF, Word, and Text files with intelligent content extraction and processing.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-8 hover-scale" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Smart References</h3>
+                        <p class="text-gray-600">Automatic generation of properly formatted reference lists with citation validation and verification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Section -->
+        <div id="demo" class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-4xl font-extrabold gradient-text mb-6">See it in Action</h2>
+                        <p class="text-xl text-gray-600 mb-8">Watch how PyBib transforms your citations in seconds.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-gray-600">
+                                <svg class="w-6 h-6 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Instant citation detection
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <svg class="w-6 h-6 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Automated updates to recent papers
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <svg class="w-6 h-6 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Reference list generation
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-12 lg:mt-0" data-aos="fade-left">
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <img src="/api/placeholder/600/400" alt="PyBib Demo" class="rounded-lg w-full"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="relative py-24 bg-white">
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-4xl font-extrabold gradient-text mb-6">
+                        Ready to Modernize Your Citations?
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                        Join thousands of researchers worldwide who are using PyBib to streamline their citation management.
+                    </p>
+                    <a href="https://pyibib-111.streamlit.app" class="gradient-bg text-white px-8 py-4 rounded-full text-lg font-medium hover-scale inline-flex items-center">
+                        Try PyBib Now <span class="ml-2">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-500">&copy; 2024 PyBib. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
+        });
+    </script>
+</body>
+</html>
