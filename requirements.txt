@@ -5,3 +5,4 @@ scholarly
 python-docx
 pdf2docx
 python-dotenv
+torch 
